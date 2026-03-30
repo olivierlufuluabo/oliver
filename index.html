@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="9_svBFgSS-bcxsj1p2mUagExVqivB9eaHFtK4LV6ca0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivier Lufuluabo | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="dark:bg-dark-400">
+    <!-- Header avec navigation -->
+    <header class="fixed w-full top-0 z-50 bg-dark-300 bg-opacity-90 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="#" class="logo-link">
+                        <div class="logo-circle">
+                            <img src="img/logo.jpg" alt="Logo LK.Olivier" class="nav-logo">
+                        </div>
+                        <span class="text-xl font-bold gradient-text">Olivier LK</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-gray-300 hover:text-primary transition-colors">À propos</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-primary transition-colors">Compétences</a>
+                    <a href="#experience" class="nav-link text-gray-300 hover:text-primary transition-colors">Expérience</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-primary transition-colors">Projets</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-primary transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Menu mobile -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#about" class="block py-2 text-gray-300 hover:text-primary transition-colors">À propos</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-primary transition-colors">Compétences</a>
+                <a href="#experience" class="block py-2 text-gray-300 hover:text-primary transition-colors">Expérience</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-primary transition-colors">Projets</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="pt-28 pb-20 md:pt-40 md:pb-32 bg-dark-400">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 hero-content">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                        <span class="block">Bonjour, je suis</span>
+                        <span class="gradient-text text-5xl md:text-6xl">Lufuluabo Olivier</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-400 mb-6">Ingénieur Logiciel | Passionné du Numérique</h2>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Développeur web, passionné par l’innovation technologique et explorateur du domaine de l’intelligence artificielle,je conçois des solutions numériques modernes, performantes qui transforment les idées en solutions concrètes. 
+                    </p>
+                    <p> <strong>Mon objectif  : </strong>Transformer les idées en applications utiles et innovantes grâce aux technologies du web et aux outils de l’IA.
+                    </p>
+                    <br>
+                    <div class="flex space-x-4">
+                        <a href="mailto:olivierlufuluabo64@gmail.com" class="px-6 py-3 rounded-full bg-primary hover:bg-opacity-80 text-white font-medium transition-all">
+                            Me contacter
+                        </a>
+                        <a class='px-6 py-3 rounded-full bg-transparent border border-primary text-primary hover:bg-primary hover:bg-opacity-10 font-medium transition-all' href='/projets'>
+                            Voir mes projets
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center hero-image">
+                    <!-- Emplacement pour une image que l'utilisateur ajoutera -->
+                    <div id="profile-image" class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
+    <!-- Remplacer cette partie -->
+    <img src="img/olivier.jpg" alt="Lufuluabo Olivier" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section À propos -->
+    <section id="about" class="py-20 bg-dark-300">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="gradient-text">À propos de moi</span>
+            </h2>
+            <div class="card rounded-xl p-8 max-w-3xl mx-auto">
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Je suis <strong>Olivier Lufuluabo</strong>, ingénieur logiciel passionné par les technologies numériques et l'innovation. 
+                        Mon parcours dans le domaine de l’informatique m’a permis de développer des compétences solides en 
+                        <strong>développement web</strong> (HTML, CSS, JavaScript), en <strong>développement mobile</strong> (Android, APK) 
+                        et en création de solutions digitales modernes. Je maîtrise également plusieurs langages de programmation, 
+                        dont <strong>Python</strong>, <strong>C#</strong> et <strong>JavaScript</strong>, etc.
+                    </p>
+
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Je m'intéresse particulièrement aux domaines émergents comme <strong>l’intelligence artificielle</strong> et 
+                        le <strong>machine learning</strong>, que je considère comme des technologies clés pour résoudre les défis 
+                        de demain. J’aime transformer des idées en solutions concrètes en concevant des applications simples, 
+                        efficaces et utiles pour les utilisateurs, que ce soit sur le web ou sur mobile.
+                    </p>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        Curieux et toujours motivé à apprendre, je consacre une grande partie de mon temps à explorer 
+                        de nouvelles technologies et à améliorer mes compétences. Mon objectif est de contribuer à la 
+                        création de solutions numériques innovantes qui apportent une réelle valeur dans la société.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="py-20 bg-dark-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="gradient-text">Mes compétences</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Développement Web -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Développement Web</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">HTML</a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">CSS</a>
+                        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">JavaScript</a>
+                        <a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Responsive Design</a>
+                        <a href="https://www.usability.gov/what-and-why/user-interface-design.html" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">UI/UX</a>
+                        <a href="https://developer.mozilla.org/fr/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Dev Full-Stack</a>
+                    </div>
+                </div>
+                
+                <!-- Développement Mobile -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-mobile-alt text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Développement Mobile</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://www.python.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Python</a>
+                        <a href="https://kivy.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">React Native</a>
+                        <a href="https://kivymd.readthedocs.io/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Flutter</a>
+                        <a href="https://developer.android.com/guide/topics/ui" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Android</a>
+                        <a href="https://material.io/design/usability/cross-platform-adaptation.html" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">UX Mobile</a>
+                    </div>
+                </div>
+                
+                <!-- Intelligence Artificielle -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-accent bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-brain text-2xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Intelligence Artificielle</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Algorithmes Spécifiques</a>
+                        <a href="https://scikit-learn.org/stable/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Machine Learning</a>
+                        <a href="https://pandas.pydata.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Analyse de Données</a>
+                        <a href="https://scipy.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Optimisation</a>
+                        <a href="https://towardsdatascience.com/applications-of-artificial-intelligence-in-industry-4-0-b9350bc5538a" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">IA Appliquée</a>
+                    </div>
+                </div>
+                
+                <!-- Électromécanique -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-cogs text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Électronique</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://www.autodesk.com/solutions/mechanical-engineering" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Conception Mécanique</a>
+                        <a href="https://www.electrical4u.com/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Systèmes Électriques</a>
+                        <a href="https://new.abb.com/process-automation" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Automatisation</a>
+                        <a href="https://www.mechatronics.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Mécatronique</a>
+                    </div>
+                </div>
+                
+                <!-- Gestion de Projets -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-tasks text-2xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Gestion de Projets</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://www.pmi.org/learning/library/leadership-skills-project-managers-6699" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Leadership</a>
+                        <a href="https://www.projectmanagement.com/contentPages/article.cfm?ID=339385" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Planification Stratégique</a>
+                        <a href="https://www.pmi.org/learning/library/successful-project-team-management-7464" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Gestion d'Équipe</a>
+                        <a href="https://agilemanifesto.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Méthodologies Agiles</a>
+                    </div>
+                </div>
+                
+                <!-- Recherche et Innovation -->
+                <div class="card rounded-xl p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-accent bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-lightbulb text-2xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Recherche et Innovation</h3>
+                                     
+                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://www.rd-alliance.org/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">R&D</a>
+                        <a href="https://www.wipo.int/portal/en/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Veille Technologique</a>
+                        <a href="https://www.interaction-design.org/literature/article/prototyping-learn-eight-common-methods-and-best-practices" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Prototypage</a>
+                        <a href="https://www.innovationleader.com/" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Solutions Innovantes</a>
+                        <a href="https://www.nature.com/articles/d41586-019-03558-5" target="_blank" class="skill-badge px-3 py-1 rounded-full text-sm hover:text-primary">Multidisciplinarité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="py-20 bg-dark-300">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="gradient-text">Expérience professionnelle</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- OKB/Créat -->
+                <div class="card rounded-xl p-6 mb-8 relative">
+                    <div class="absolute top-6 left-6 w-12 h-12 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-briefcase text-xl text-primary"></i>
+                    </div>
+                    <div class="ml-16">
+                        <h3 class="text-xl font-semibold text-white">Technicien, Informaticien en chef</h3>
+                        <p class="text-primary text-sm mb-2">ElectroTech | 2019 - Present</p>
+                        <p class="text-gray-300 mb-4">
+                            Direction d'une entreprise spécialisée dans le développement informatique et l'électronique. Supervision d'équipes multidisciplinaires pour la création de solutions technologiques innovantes.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Développement Web</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Applications Mobiles</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">IA</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Mécatronique</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Croissance de l'entreprise de 0 à 15 employés en 4 ans
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Développement de plus de 30 projets client réussis
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Mise en place d'un département R&D pour l'innovation
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Expérience 2 -->
+                <div class="card rounded-xl p-6 mb-8 relative">
+                    <div class="absolute top-6 left-6 w-12 h-12 rounded-lg bg-secondary bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-xl text-secondary"></i>
+                    </div>
+                    <div class="ml-16">
+                        <h3 class="text-xl font-semibold text-white">Lead Developer</h3>
+                        <p class="text-secondary text-sm mb-2">TechInnovate | 2017 - 2019</p>
+                        <p class="text-gray-300 mb-4">
+                            Direction d'une équipe de développeurs web et mobiles. Conception et implémentation d'applications innovantes combinant interfaces web et systèmes embarqués.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Gestion d'équipe</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Direction d'une équipe de 6 développeurs
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Livraison de 12 projets majeurs dans les délais et budgets
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Expérience 3 -->
+                <div class="card rounded-xl p-6 mb-8 relative">
+                    <div class="absolute top-6 left-6 w-12 h-12 rounded-lg bg-accent bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-cog text-xl text-accent"></i>
+                    </div>
+                    <div class="ml-16">
+                        <h3 class="text-xl font-semibold text-white">Ingénieur Recherche & Développement</h3>
+                        <p class="text-accent text-sm mb-2">EcoMech Solutions | 2015 - 2017</p>
+                        <p class="text-gray-300 mb-4">
+                            Conception et développement de systèmes électromécaniques pour des applications industrielles. Intégration de capteurs IoT et d'interfaces web pour le monitoring.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Électromécanique</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Interfaces Web</span>
+                            <span class="skill-badge px-3 py-1 rounded-full text-xs">Capteurs</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Développement d'un système de monitoring avancé
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>Réduction de 35% des coûts de maintenance par l'intégration de l'IA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section class="py-20 bg-dark-400">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="gradient-text">Formation</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card rounded-xl p-6 relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-lg text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Diplôme d'Ingénieur en Mécanique</h3>
+                    </div>
+                    <p class="text-primary text-sm mb-2">Niveau A</p>
+                    <p class="text-gray-300 mb-2">
+                        Spécialisation en systèmes électromécaniques et automatismes industriels.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-award text-accent mr-2"></i>Mention Très Bien
+                    </p>
+                </div>
+                
+                <div class="card rounded-xl p-6 relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-secondary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-laptop text-lg text-secondary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Formation en Développement Web</h3>
+                    </div>
+                    <p class="text-secondary text-sm mb-2">Formation en ligne</p>
+                    <p class="text-gray-300 mb-2">
+                        HTML, CSS, JavaScript, Python, Kivy, KivyMD
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-certificate text-accent mr-2"></i>Certifications multiples
+                    </p>
+                </div>
+                
+                <div class="card rounded-xl p-6 relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-accent bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-brain text-lg text-accent"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Spécialisation en Intelligence Artificielle</h3>
+                    </div>
+                    <p class="text-accent text-sm mb-2">Formation continue</p>
+                    <p class="text-gray-300 mb-2">
+                        Algorithmes d'apprentissage, optimisation et applications pratiques de l'IA.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-star text-accent mr-2"></i>Projets pratiques réalisés
+                    </p>
+                </div>
+                
+                <div class="card rounded-xl p-6 relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-business-time text-lg text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Gestion d'Entreprise & Leadership</h3>
+                    </div>
+                    <p class="text-primary text-sm mb-2">Formations professionnelles</p>
+                    <p class="text-gray-300 mb-2">
+                        Management d'équipe, stratégie d'entreprise et développement commercial.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-users text-accent mr-2"></i>Application directe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="py-20 bg-dark-300">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="gradient-text">Projets réalisés</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="project-card card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">SmarTech IA</h3>
+                        <p class="text-gray-400 text-sm mb-4">Algorithme d'optimisation industrielle</p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Plateforme d'intelligence artificielle qui optimise les processus industriels en temps réel, réduisant les coûts énergétiques de 25%.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Python</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Machine Learning</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Interface Web</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-card card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-secondary to-primary flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">MédiAssist</h3>
+                        <p class="text-gray-400 text-sm mb-4">Application mobile de santé</p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Application développée avec KivyMD qui permet le suivi de santé personnalisé et la connexion avec des dispositifs médicaux IoT.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Python</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">KivyMD</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">IoT</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Santé</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-card card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-accent to-secondary flex items-center justify-center">
+                        <i class="fas fa-industry text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">EcoMech</h3>
+                        <p class="text-gray-400 text-sm mb-4">Système de récupération d'énergie</p>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Système électromécanique innovant qui récupère l'énergie cinétique perdue dans les processus industriels, avec tableau de bord web.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Électromécanique</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">Énergie Verte</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="skill-badge px-2 py-1 rounded-full text-xs">IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Voir plus de projets -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center mt-4">
+                    <a class='px-6 py-3 rounded-full bg-primary hover:bg-opacity-80 text-white font-medium transition-all' href='/projets'>
+                        <i class="fas fa-folder-open mr-2"></i>Voir tous mes projets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center p-6 bg-dark-400 rounded-2xl">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold gradient-text">Lufuluabo Olivier</h3>
+                    <p class="text-gray-400 mt-2 text-lg">Ingénieur Logiciel</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:olivierlufuluabo64@gmail.com" title="Email" class="w-12 h-12 flex items-center justify-center bg-gray-700 text-white rounded-xl shadow-lg hover:bg-gray-600 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    
+                    <a href="https://github.com/olivierlufuluabo" target="_blank" title="GitHub" class="w-12 h-12 flex items-center justify-center bg-gray-800 text-white rounded-xl shadow-lg hover:bg-black hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    
+                    <a href="tel:+243893669739" title="Appeler" class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-xl shadow-lg hover:bg-blue-400 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/olivierlufuluabo.kanyinda.3" target="_blank" title="Facebook" class="w-12 h-12 flex items-center justify-center bg-[#1877F2] text-white rounded-xl shadow-lg hover:brightness-110 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+
+                    <a href="https://wa.me/243893669739" target="_blank" title="WhatsApp" class="w-12 h-12 flex items-center justify-center bg-[#25D366] text-white rounded-xl shadow-lg hover:brightness-110 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/olivier-lufuluabo-a2196326b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" title="LinkedIn" class="w-12 h-12 flex items-center justify-center bg-[#0077B5] text-white rounded-xl shadow-lg hover:brightness-110 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2023 Lufuluabo Olivier. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

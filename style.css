@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #6C63FF, #4ECDC4, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textShine {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .card {
+            background: rgba(42, 42, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.2);
+            border: 1px solid rgba(108, 99, 255, 0.3);
+        }
+        
+        .project-card {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(0deg, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0) 100%);
+            padding: 20px;
+            transform: translateY(100px);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover .overlay {
+            transform: translateY(0);
+        }
+        
+        .skill-badge {
+            background: rgba(108, 99, 255, 0.1);
+            border: 1px solid rgba(108, 99, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            background: rgba(108, 99, 255, 0.2);
+            border: 1px solid rgba(108, 99, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        /* Pour la barre de navigation */
+        .nav-link {
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #6C63FF, #4ECDC4);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Animation pour la section hero */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-content {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .hero-image {
+            animation: fadeIn 1s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+        
+        /* Personnalisation des barres de défilement */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1A1A1A;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4A4A4A;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6C63FF;
+        }
+
+        /* Fix pour le menu mobile */
+        #mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #1A1A1A;
+            padding: 8px 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 50;
+        }
+
+        /* Style du lien pour l'alignement global */
+        .logo-link {
+            display: flex;
+            align-items: center; /* Aligne verticalement le cercle et le texte */
+            text-decoration: none;
+            gap: 12px; /* Espace entre le cercle et le texte */
+        }
+
+        /* Le cercle du logo */
+        .logo-circle {
+            width: 45px;          /* Taille du cercle (hauteur et largeur identiques) */
+            height: 45px;
+            background-color: #000; /* Fond noir pour ton logo spécifique */
+            border: 2px solid #5d5dff; /* Bordure bleue/violette élégante */
+            border-radius: 50%;   /* Rend le conteneur parfaitement rond */
+            display: flex;
+            align-items: center;  /* Centre le contenu (juste au cas où) */
+            justify-content: center;
+            overflow: hidden;     /* INDISPENSABLE : Coupe tout ce qui dépasse du cercle */
+        }
+
+        /* L'image à l'intérieur du cercle - LA SOLUTION */
+        .nav-logo {
+            width: 100%;          /* L'image prend toute la largeur du cercle */
+            height: 100%;         /* L'image prend toute la hauteur du cercle */
+            
+            /* object-fit: cover est la propriété magique.
+            Elle force l'image à remplir tout le conteneur (100%x100%)
+            en conservant ses proportions, même si elle doit être
+            légèrement recadrée sur les côtés. C'est ce qui cache
+            les coins rectangulaires. */
+            object-fit: cover;
+            
+            /* object-position: center assure que le centre de ton logo
+            est bien au centre du cercle après le recadrage. */
+            object-position: center;
+            
+            display: block;
+        }
